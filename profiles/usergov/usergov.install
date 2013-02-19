@@ -11,7 +11,7 @@
  *
  * @see system_install()
  */
-function demo_install() {
+function usergov_install() {
   // Add text formats.
   $filtered_html_format = array(
     'format' => 'filtered_html',
@@ -403,7 +403,7 @@ function demo_install() {
   $admin_role->name = 'administrator';
   $admin_role->weight = 2;
   user_role_save($admin_role);
-  
+
   user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
   // Set this as the administrator role.
   variable_set('user_admin_role', $admin_role->rid);
