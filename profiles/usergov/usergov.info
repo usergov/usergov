@@ -39,6 +39,7 @@ dependencies[] = views_ui
 dependencies[] = smtp
 dependencies[] = advanced_help
 dependencies[] = og
+dependencies[] = profile2
 dependencies[] = homebox
 ; END OF 3RD PARTY MODULES
 
